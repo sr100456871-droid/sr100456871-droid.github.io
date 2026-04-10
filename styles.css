@@ -1,15 +1,15 @@
 :root {
-  --bg: #eef2f6;
+  --bg: #edf5f1;
   --surface: rgba(255, 255, 255, 0.9);
   --surface-strong: #ffffff;
-  --surface-soft: rgba(232, 238, 245, 0.9);
-  --text: #132033;
-  --muted: #536277;
-  --accent: #1f4d7a;
-  --accent-dark: #163654;
-  --accent-soft: rgba(31, 77, 122, 0.1);
-  --line: rgba(19, 32, 51, 0.1);
-  --shadow: 0 20px 48px rgba(15, 35, 60, 0.08);
+  --surface-soft: rgba(233, 243, 238, 0.92);
+  --text: #14241f;
+  --muted: #536860;
+  --accent: #0a7b5a;
+  --accent-dark: #064d3a;
+  --accent-soft: rgba(10, 123, 90, 0.11);
+  --line: rgba(20, 36, 31, 0.1);
+  --shadow: 0 20px 48px rgba(12, 29, 24, 0.08);
 }
 
 * {
@@ -23,11 +23,11 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  font-family: "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+  font-family: "Segoe UI Variable", "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(31, 77, 122, 0.14), transparent 28%),
-    radial-gradient(circle at 85% 8%, rgba(15, 41, 70, 0.08), transparent 18%),
-    linear-gradient(180deg, #f7fafc 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(10, 123, 90, 0.15), transparent 28%),
+    radial-gradient(circle at 85% 8%, rgba(196, 155, 86, 0.12), transparent 18%),
+    linear-gradient(180deg, #f8fbf9 0%, var(--bg) 100%);
 }
 
 a {
@@ -50,9 +50,9 @@ input {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: rgba(247, 250, 252, 0.88);
+  background: rgba(248, 251, 249, 0.88);
   backdrop-filter: blur(12px);
-  box-shadow: 0 10px 24px rgba(19, 32, 51, 0.04);
+  box-shadow: 0 10px 24px rgba(20, 36, 31, 0.04);
 }
 
 .nav,
@@ -68,9 +68,9 @@ input {
 }
 
 .brand {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
 }
 
 .menu-toggle {
@@ -136,7 +136,7 @@ input {
 }
 
 .hero h1 {
-  max-width: 11ch;
+  max-width: 12ch;
   font-size: clamp(2.8rem, 5.6vw, 4.9rem);
   letter-spacing: -0.04em;
 }
@@ -184,7 +184,7 @@ input {
   padding: 1.35rem;
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(236, 242, 248, 0.92));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(236, 245, 241, 0.92));
   box-shadow: var(--shadow);
 }
 
@@ -238,13 +238,13 @@ input {
   justify-content: center;
   min-height: 40px;
   padding: 0.55rem 0.9rem;
-  border: 1px solid rgba(31, 77, 122, 0.16);
+  border: 1px solid rgba(10, 123, 90, 0.18);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.82);
   color: var(--accent-dark);
   font-size: 0.92rem;
   font-weight: 600;
-  box-shadow: 0 10px 24px rgba(15, 35, 60, 0.05);
+  box-shadow: 0 10px 24px rgba(12, 29, 24, 0.05);
 }
 
 .hero-actions {
@@ -313,14 +313,14 @@ input {
 .portrait-card {
   display: grid;
   gap: 1rem;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(230, 238, 247, 0.9));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(229, 240, 235, 0.9));
 }
 
 .portrait-frame {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: #f3f7fb;
+  background: #f2f8f4;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   aspect-ratio: 5 / 6.8;
 }
@@ -376,7 +376,7 @@ input {
 }
 
 .quick-contact {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(228, 236, 245, 0.88));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(230, 241, 236, 0.88));
 }
 
 .quick-contact-list,
@@ -458,7 +458,7 @@ input {
 
 .accent-section,
 .contact-section {
-  background: rgba(224, 232, 241, 0.45);
+  background: rgba(225, 236, 231, 0.48);
 }
 
 .detail-list,
@@ -558,7 +558,7 @@ input {
   inset: 0 auto auto 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent) 0%, rgba(31, 77, 122, 0.15) 100%);
+  background: linear-gradient(90deg, var(--accent) 0%, rgba(10, 123, 90, 0.16) 100%);
 }
 
 .info-card h3,
@@ -611,7 +611,7 @@ input {
 }
 
 .project-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 248, 252, 0.9));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(242, 247, 244, 0.92));
 }
 
 .project-subtitle {
@@ -626,7 +626,7 @@ input {
   padding: 0.95rem 1rem;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(31, 77, 122, 0.05);
+  background: rgba(10, 123, 90, 0.06);
   color: var(--muted);
   line-height: 1.75;
 }
